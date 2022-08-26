@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ukuran smartphone */
+[class*="col-"]{
+    width: 100%;
+}
+/* ukuran tablet */
+@media only screen and (min-width:600px){
+    .col-md-1{
+        width: 8.33%;
+    }
+    .col-md-2{
+        width: 16.66%;
+    }
+    .col-md-3{
+        width: 25%;
+    }
+    .col-md-4{
+        width: 33.33%;
+    }
+    .col-md-5{
+        width: 41.66%;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-7{
+        width: 58.33%;
+    }
+    .col-md-8{
+        width: 66.66%;
+    }
+    .col-md-9{
+        width: 75%;
+    }
+    .col-md-10{
+        width: 83.33%;
+    }
+    .col-md-11{
+        width: 91.66%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
+/* ukuran pc */
+@media only screen and (min-width:787px){
+    .col-lg-1{
+        width: 8.33%;
+    }
+    .col-lg-2{
+        width: 16.66%;
+    }
+    .col-lg-3{
+        width: 25%;
+    }
+    .col-lg-4{
+        width: 33.33%;
+    }
+    .col-lg-5{
+        width: 41.66%;
+    }
+    .col-lg-6{
+        width: 50%;
+    }
+    .col-lg-7{
+        width: 58.33%;
+    }
+    .col-lg-8{
+        width: 66.66%;
+    }
+    .col-lg-9{
+        width: 75%;
+    }
+    .col-lg-10{
+        width: 83.33%;
+    }
+    .col-lg-11{
+        width: 91.66%;
+    }
+    .col-lg-12{
+        width: 100%;
+    }
+}
+
+.container{
+    width: 100%;
+}
+    
+#header{
+    width: 100%;
+    height: 50vh;
+    background: url(https://dkpp.bulelengkab.go.id/public/uploads/konten/39-langkah-mudah-merawat-aglaonema-agar-tetap-cantik-dan-subur.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.dark{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+}
+.title{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: helvetica;
+    width: 70vw;
+}
+.subtitle{
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+#deskripsi{
+    width: 100%;
+    /* display: flex; */
+}
+.imagedeskripsi{
+    /* width: 35%; */
+    padding: 10px;
+}
+.imagedeskripsi > img{
+    width: 100%;
+}
+.textdeskripsi{
+    /* width: 65%; */
+    padding: 10px;
+}
+.textdeskripsi > h3{
+    font-size: 30px;
+    font-family: helvetica;
+}
+.textdeskripsi > p{
+    font-size: 18px;
+    font-family: helvetica;
+}
+
+#gallery{
+    margin-top: 30px;
+}
+#gallery > h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: helvetica;
+}
+.box{
+    background-color: rgb(182, 255, 158);
+    height: 300px;
+    margin: 20px;
+    position: relative;
+}
+.wrapperbox{
+    justify-content: center;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.box h5 {
+    position: absolute;
+    bottom: 0;
+    color: black;
+    background-color: seagreen;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+    font-family: helvetica;
+}
+.box:hover img{
+    transform: scale(1.05);
+    filter: grayscale(100%);
+}
+.box:hover h5{
+    transform: scale(1.05);
+}
+
+#statistik{
+    margin-top: 30px;
+}
+#statistik h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: helvetica;
+}
+.wrappercircle{
+    justify-content: center;
+}
+.boxcircle{
+    margin: 5px;
+    height: 300px;
+    background-color: seagreen;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(239, 252, 235);
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    color: seagreen;
+    font-weight: bolder;
+    font-family: helvetica;
+
+    transition: transform 2.5s;
+}
+.circle:hover{
+    transform: rotateY(360deg);
+}
+.boxcircle h3 {
+    font-size: 20px;
+    font-family: helvetica;
+    font-weight: bold;
+    color: white;
+}
+
+#pesan{
+    margin-top: 20px;
+    padding: 50px 150px 20px 150px;
+    background-color: rgb(120, 201, 155);
+}
+#pesan h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: helvetica;
+    font-weight: bold;
+}
+.forminput{
+    height: 35px;
+    font-size: 17.5px;
+    font-family: helvetica;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#pesan form strong {
+    font-size: 17.5px;
+    font-family: helvetica;
+}
+#pesan form button{
+    padding: 10px;
+    background-color: seagreen;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+#pesan form button:hover{
+    background-color: rgb(218, 251, 232);
+    color: seagreen;
+    border: 5px;
+}
+
+#footer{
+    height: 20vh;
+    background-color: rgb(218, 251, 232);
+    color: black;
+}
+.boxlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 125px;
+}
+.keterangan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keterangan #judul{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: helvetica;
+}
+.keterangan #subjudul{
+    margin-top: 10px;
+    font-size: 12.5px;
+    text-align: center;
+    font-family: verdana;
+    text-transform: capitalize;
+}
+.contact{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.contact h3{
+    font-family: helvetica;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+#logoig{
+    width: 25px;
+}
+.contact ul  li{
+    list-style: none;
+}
+.contact .boxcontact ul li a{
+    display: flex;
+    color: black;
+}
